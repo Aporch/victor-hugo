@@ -1,9 +1,345 @@
-{{ partial "header" . }}
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-<h1>Hugo with Gulp, PostCSS and Webpack</h1>
+    <title>OKKANAI</title>
 
-<p>
-  Hooray 🎉 - you've built this with <a href="https://github.com/netlify/victor-hugo">Victor-Hugo</a>!
-</p>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-{{ partial "footer" . }}
+    <!-- Animation CSS -->
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="img/logo_black_square.png"/>
+</head>
+<body id="page-top" class="landing-page">
+
+<!-- Navbar -->
+<div class="navbar-wrapper">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" style="background-color: black; display: inline-flex" href="index.html"><img style="height: 20px;margin-left: 10px;margin-top: -2px;" src="img/logo1.png"></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="page-scroll" href="#page-top">Inicio</a></li>
+                        <li><a class="page-scroll" href="#features">Bases</a></li>
+                        <li><a class="page-scroll" href="#team">Misión</a></li>
+                        <li><a class="page-scroll" href="#testimonials">Fundamento</a></li>
+                        <li><a class="page-scroll" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+</div>
+
+<!-- Mission -->
+<div id="inSlider" class="carousel carousel-fade" data-ride="carousel">
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>formá parte del desarrollo y evolución<br/>
+                    de los elementos deportivos que usas,<br/>
+                    obtenes beneficios únicos de OKKANAI y los fabricantes</h1>
+                    <h2>tu actividad en el grupo se multiplica</h2>
+                    <p><a class="btn btn-lg btn-primary" href="#features" role="button">Ver Más</a></p>
+                </div>
+            </div>
+            <!-- Set background for slide in css -->
+            <div class="header-back one"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Features 1 -->
+<section id="features" class="container services">
+    <div class="row">
+        <div class="col-sm-3">
+            <h2>Deportista</h2>
+            <p>Brindas tu experiencia de uso para que un fabricante responda a eso y realmente puedas usar algo pensando en vos.<br/>
+            Podés guiarte dentro de productos en base a información y fabricantes genuinos, no a meras campañas de marketing.<br/>
+	    También podrás hacer uso de beneficios exclusivos por ser parte del grupo</p>
+            <p><a class="navy-link" href="#" role="button">Más &raquo;</a></p>
+        </div>
+        <div class="col-sm-3">
+            <h2>Instructores+ Shops+ Distribuidores+</h2>
+            <p>Podrán hacer uso de las mismas funcionalidades que los fabricantes, incluso publicar en el blog generando confianza y cercanía a nuevos clientes.</p>
+            <p><a class="navy-link" href="#" role="button">Más &raquo;</a></p>
+        </div>
+        <div class="col-sm-3">
+            <h2>Fabricantes</h2>
+            <p>Tienen la posibilidad de dar uso a los números de serie de los productos vendidos, seguirlos durante su vida útil y sumarlo al feedback del deportista.<br/>
+	    Se busca dar una solución integral al diseño y evolución de los productos, pudiendo destinar recursos a otros elementos clave dentro de la empresa</p>
+            <p><a class="navy-link" href="#" role="button">Más &raquo;</a></p>
+        </div>
+        <div class="col-sm-3">
+            <h2>Marcas en general</h2>
+            <p>Tienen la posibilidad de mostrar sus productos y servicios a un mercado específico.</p>
+            <p><a class="navy-link" href="#" role="button">Más &raquo;</a></p>
+        </div>
+    </div>
+</section>
+
+<!-- Socia features -->
+<section class="container features">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <div class="navy-line"></div>
+            <h1>En qué puede beneficiar a mi marca?<br/> <span class="navy">Es un grupo multidiciplinario...</span> </h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 text-center wow fadeInLeft">
+            <div>
+                <!--<i class="fa fa-mobile features-icon"></i>-->
+                <img src="img/instagram.png" style="width: 55px;" />
+                <h2>Instagram</h2>
+                <p>Posibilidad de mostrarte a posibles usuarios, reposteo de publicaciones</p>
+            </div>
+            <div class="m-t-lg">
+                <!--<i class="fa fa-bar-chart features-icon"></i>-->
+                <img src="img/facebook.png" style="width: 38px;" />                
+                <h2>Facebook</h2>
+                <p>Canal disponible para contacto y promoción</p>
+            </div>
+	    <div>
+                <img src="img/blog.png" style="width: 55px;" />
+                <h2>Blog</h2>
+                <p>Poseemos nuestro propio blog donde se entrevistará a personas seleccionadas dentro del grupo dando lugar así a otro canal de feedback y promoción</p>
+            </div>
+		<a href="mailto:contact@okkanai.us" class="btn btn-primary">Contactar</a>
+        </div>
+        <div class="col-md-6 text-center wow zoomIn">
+            <img src="img/wake1.jpg" alt="dashboard" class="img-responsive" style="margin: auto;">
+        </div>
+        <div class="col-md-3 text-center wow fadeInRight">
+            <div>
+                <img src="img/google_survey.png" style="width: 50px"/>
+                <h2>Google Survey</h2>
+                <p>Encuestas no invasivas o spamers, es el usuario el que las completa cuando quiere y a su demanda.</p>
+            </div>
+            <div class="m-t-lg">
+                <img src="img/mic.png" style="width: 23px"/>
+                <h2>Encuesta de campo</h2>
+                <p>Escuchamos lo que el mercado dice y lo traducimos en métricas que tendrás a disposición para orientar tus acciones.</p>
+            </div>
+            <div>
+                <img src="img/light-bulb.png" style="width: 55px;" />
+                <h2>Diseño/Desarrollo</h2>
+                <p>Podremos trabajar a demanda entre el fabricante y nuestro departamento de I+D+i reduciendo así tu lead time, tenemos capacidad instalada para fabricar prototipos, verificar-validar procesos, etc</p>
+        </div>
+		<a href="mailto:contact@okkanai.us" class="btn btn-primary" >Contactar</a>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <div class="navy-line"></div>
+            <h1>Interactúa de forma efectiva con tu usuario</h1>
+            <p>Dale la oportunidad real de crear productos pensados en él</p>
+        </div>
+    </div>
+    <!--<div class="row features-block">
+        <div class="col-lg-6 features-text wow fadeInLeft">
+            <small>INSPINIA</small>
+            <h2>Perfectly designed </h2>
+            <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with latest jQuery plugins.</p>
+            <a href="" class="btn btn-primary">Learn more</a>
+        </div>
+        <div class="col-lg-6 text-right wow fadeInRight">
+            <img src="img/dashboard.png" alt="dashboard" class="img-responsive pull-right">
+        </div>
+    </div>-->
+</section>
+
+<!-- Team -->
+<section id="team" class="gray-section team">
+    <div class="container">
+        <div class="row m-b-lg">
+            <div class="col-lg-12 text-center">
+                <div class="features-text wow fadeInLeft">
+               		<h2>Como todo comienza y la Misión</h2>
+               		<p>Hace 5 años empiezo a diseñar mis propias tablas de wakeskate, probando técnicas de fabricación, gráficas y demás. 
+			La propuesta era que sean intervenidas por artistas, generando un punto de promoción para ellos, y la forma de obtener un elemento único para el usuario. 
+			Queriendo mejorar, sin poder escapar a mi background de ingeniería, me dispongo a fabricar una máquina
+			cnc para poder realizar los moldes y tablas con mayor presición y repetitividad.<br/>En aquel momento la MISIÓN era:</p>
+			<h3>"generar productos sustentables, con la mejor terminación y en un proceso de mejora contínua, que sean el orgullo de sus creadores y usuarios"</h3>
+		  	<h2>Visión</h2>
+                        <h3>"Ser el ambiente de encuentro entre lo tangible y lo intangible para acompañar el camino de crecimiento y satisfacción de los involucrados"</h3>
+		</div>
+		<div class="features-text wow fadeInRight">
+                	<h2>Presente, misión y visión</h2>
+            		<p>Después de 5 años y habiendo cambiado el rumbo inicial del proyecto, sigo fiel a los valores fundacionales declarados, evidenciar eso me hace confirmar
+			que lo que sigo es una pasión, el medio para lograrlo es el servicio a los deportistas y empresas del rubro.<br/>
+			¿Por qué el cambio de rumbo?<br/>Como pequeño fabricante, me di cuenta de varias cosas fundamentales, una es lo difícil que es ir en contra del marketing de las grandes empresas
+			ellos destinan un montón de recursos a formar tu opinión sobre su producto. Por otro lado, son los pequeños fabricantes los que están más cerca de escucharte y responder con un producto
+			acorde al requerimiento, pero paradójicamente, es muy difícilcubrir todas las actividades que requiere el diseño-desarrollo-producción-promoción y venta de un producto.
+			de las grandes marcas</p>
+            	</div>
+    	    </div>            
+	</div>
+    </div>
+</div>
+    
+	
+            
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section id="testimonials" class="navy-section testimonials" style="margin-top: 0">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center wow zoomIn">
+                <i class="fa fa-comment big-icon"></i>
+                <h1>
+                    quiero saber un poco más
+                </h1>
+                <div class="testimonials-text">
+                    <i>"en que me beneficia como usuario o fabricante?"</i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- Contact -->
+<section id="contact" class="gray-section contact" style="margin-top: 0px">
+    <div class="container">
+        <div class="row m-b-lg">
+            <div class="col-lg-12 text-center">
+                <div class="navy-line"></div>
+                <h1>Contact Us</h1>
+                <p>To start gathering precious consumer feedback and to grow your business.</p>
+            </div>
+        </div>
+        <div class="row m-b-lg">
+            <div class="col-lg-3 col-lg-offset-3">
+                <address>
+                    <strong><span class="navy">Okkanai</span></strong><br/>
+                    Resgistrado desde 2013<br/>
+                </address>
+            </div>
+            <div class="col-lg-4">
+                <p class="text-color">
+                    Sports product you want in your hands!
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <a href="mailto:contact@okkanai.us" class="btn btn-primary">Enviar un email</a>
+                <p class="m-t-sm">
+                    seguí nuestras redes
+                </p>
+                <ul class="list-inline social-icon">
+                    <li><a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li><a href="https://www.facebook.com/okkanai"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li><a href="https://instagram.com/okkanai_us"><i class="fa fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
+                <p><strong>&copy; 2017 Okkanai</strong><br/></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Mainly scripts -->
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.metisMenu.js"></script>
+<script src="js/jquery.slimscroll.min.js"></script>
+
+<!-- Custom and plugin javascript -->
+<script src="js/inspinia.js"></script>
+<script src="js/pace.min.js"></script>
+<script src="js/wow.min.js"></script>
+
+
+<script>
+
+    $(document).ready(function () {
+
+        $('body').scrollspy({
+            target: '.navbar-fixed-top',
+            offset: 80
+        });
+
+        // Page scrolling feature
+        $('a.page-scroll').bind('click', function(event) {
+            var link = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $(link.attr('href')).offset().top - 50
+            }, 500);
+            event.preventDefault();
+            $("#navbar").collapse('hide');
+        });
+    });
+
+    var cbpAnimatedHeader = (function() {
+        var docElem = document.documentElement,
+                header = document.querySelector( '.navbar-default' ),
+                didScroll = false,
+                changeHeaderOn = 200;
+        function init() {
+            window.addEventListener( 'scroll', function( event ) {
+                if( !didScroll ) {
+                    didScroll = true;
+                    setTimeout( scrollPage, 250 );
+                }
+            }, false );
+        }
+        function scrollPage() {
+            var sy = scrollY();
+            if ( sy >= changeHeaderOn ) {
+                $(header).addClass('navbar-scroll')
+            }
+            else {
+                $(header).removeClass('navbar-scroll')
+            }
+            didScroll = false;
+        }
+        function scrollY() {
+            return window.pageYOffset || docElem.scrollTop;
+        }
+        init();
+
+    })();
+
+    // Activate WOW.js plugin for animation on scroll
+    new WOW().init();
+
+</script>
+
+</body>
+</html>
+>>>>>>> ced4041de8fc728af6242928b6340aa8fad99351
