@@ -6928,7 +6928,7 @@ body.landing-page {
   color: black !important;
 }
 .landing-page .contact {
-  background-image: url('../word_map.png');
+  background-image: url('');
   background-position: 50% 50%;
   background-repeat: no-repeat;
   margin-top: 60px;
